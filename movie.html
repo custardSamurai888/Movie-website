@@ -25,6 +25,18 @@
       opacity: 0.6;
     }
 
+    .top-section {
+      display: flex;
+      flex-direction:row;
+    }
+
+    .search-bar {
+      width: 500px;
+      height: 25px;
+      border: none;
+      border-radius: 12px;
+    }
+
     .login-option {
       display: flex;
       flex-direction: column;
@@ -71,29 +83,30 @@
       color: rgb(224, 224, 71);
     }
 
-    .search-bar {
+    .register {
     display: block; 
     margin: 20px auto;  
     margin-top: -100px;
     width: 50%;  
     padding: 10px;  
-    font-size: 18px;  
+    font-size: 23px;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: none;
     border-radius: 10px;
     text-align: center;
-      
+    cursor: pointer;
+    background-color: rgb(71, 189, 71);
     }
 
-    .heroPic {
-      width: 100px;
-      margin-bottom: 30px;
+    .register:active {
+      opacity: 0.6;
     }
 
-    .search-pic {
+    .reg-hero {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: -100px;
+      margin-top: ;
     }
 
   </style>
@@ -101,9 +114,15 @@
 </head>
 
 <body style="background-color: rgb(4, 31, 54);">
-  <button class="logoButton">
-    <img class="logoMain" src="logos/nobacgkorn.png">
-  </button>
+  <div class="top-section">
+    <button class="logoButton">
+      <img class="logoMain" src="logos/nobacgkorn.png">
+    </button>
+
+    <input class="search-bar" type="text" placeholder="Search For a Movie">
+  </div>
+
+
   <div class="login-option">
     <input class="Login" type="text" placeholder="Username">
     <input class="password" type="password" placeholder="Password">
@@ -115,9 +134,11 @@
     <p class="slogan">ALL MOVIES, ONE PLACE!</p>
   </div>
 
-  <div class="search-pic">
-    <img class="heroPic" src="logos/movieSign.png">
-    <input class="search-bar" type="text" placeholder="Search For a Movie">
+  <div class="reg-hero">
+    <button class="register">
+      Register Now
+    </button> 
+
   </div>
   
 </body>
